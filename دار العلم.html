@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الملف التعريفي</title>
+    <style>
+        body {
+            font-family: 'Cairo', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #e8f0fe, #f9fcff);
+            color: #333;
+            text-align: center;
+            overflow-x: hidden;
+        }
+        .container {
+            max-width: 420px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+            border-radius: 25px;
+            animation: fadeIn 1s ease-in-out;
+            position: relative;
+            overflow: hidden;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .logo {
+            width: 130px;
+            height: 130px;
+            margin: 0 auto 20px;
+            border-radius: 50%;
+            border: 5px solid #0056b3;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s;
+        }
+        .logo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .logo:hover {
+            transform: scale(1.1);
+        }
+        h1 {
+            color: #0056b3;
+            margin-bottom: 10px;
+            font-size: 2rem;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+        }
+        p {
+            color: #555;
+            margin-bottom: 25px;
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+        .social-links {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        .social-links a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            color: white;
+            background: linear-gradient(135deg, #0056b3, #003d82);
+            padding: 12px 20px;
+            border-radius: 50px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            transition: background-color 0.3s, transform 0.2s;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        .social-links a:hover {
+            transform: translateY(-5px) scale(1.05);
+            background: linear-gradient(135deg, #004499, #002c66);
+        }
+        .social-links a i {
+            margin-left: 12px;
+            font-size: 1.5rem;
+        }
+        .decorations {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            overflow: hidden;
+        }
+        .decorations img {
+            position: absolute;
+            opacity: 0.15;
+            filter: blur(2px);
+        }
+        .decorations .bag {
+            width: 100px;
+            top: 10%;
+            left: -5%;
+        }
+        .decorations .pencil {
+            width: 80px;
+            top: 50%;
+            left: 90%;
+            transform: rotate(45deg);
+        }
+        .decorations .students {
+            width: 120px;
+            bottom: 0;
+            right: 5%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="decorations">
+            <img src="https://cdn-icons-png.flaticon.com/512/2623/2623543.png" alt="School Bag" class="bag">
+            <img src="https://cdn-icons-png.flaticon.com/512/186/186239.png" alt="Pencil" class="pencil">
+            <img src="https://cdn-icons-png.flaticon.com/512/201/201818.png" alt="Students" class="students">
+        </div>
+        <div class="logo">
+            <img src="دار العلم.jpg" alt="الشعار">
+        </div>
+        <h1>مرحبًا بكم في مجموعة مدارس دار العلم الاهلية النموذجية</h1>
+        <p>تابعونا على مواقع التواصل الاجتماعي للبقاء على اطلاع على أحدث أخبارنا ونشاطاتنا:</p>
+        <div class="social-links">
+            <a href=https://www.facebook.com/share/1E5eRSeE26/?mibextid=wwXIfr" target="_blank"><i class="fab fa-facebook"></i> فيسبوك المدرسة</a>
+            <a href="https://www.facebook.com/share/1PetWdrdh7/?mibextid=wwXIfr" target="_blank"><i class="fab fa-facebook"></i> فيسبوك الروضة</a>
+            <a href="https://www.instagram.com/dar_alalm_?igsh=MTZoZjVwdzBxa2NnYQ==" target="_blank"><i class="fab fa-instagram"></i> إنستغرام</a>
+            <a href="https://www.tiktok.com/@dar_alalm1?_t=ZS-8tik8PpmfJp&_r=1" target="_blank"><i class="fab fa-tiktok"></i> تيك توك</a>
+        </div>
+    </div>
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</body>
+</html>
